@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.typing-container::after {
+  content: '';
+  animation: blink 0.5s infinite alternate;
+  color: #c5ffde;
+  border: 2px solid #c5ffde;
+  margin-left: 2px;
+  border-radius: 2px;
+}
+
+@keyframes blink {
+  0% {
+    border-color: #c5ffde; 
+    opacity: 1;
+  }
+  100% {
+    border-color: #42c77c;
+    opacity: 0.4;
+  }
+}
+.spinning_img{
+  animation: spin 25s infinite, blur 2s infinite alternate;
+}
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  90%, 100%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes blur {
+  from{
+    box-shadow: 0px 0px 0px rgb(89, 142, 112);
+  }
+  to{
+    box-shadow: 0px 0px 50px rgb(89, 142, 112), 0px 0px 50px rgb(89, 142, 112);
+  }
+}
+q::before{
+  content: open-quote;
+}
+q::after{
+  content: close-quote;
+}
+.links li a::after{
+  content: "";
+  border: 1.5px solid #c5ffde;
+  border-radius: 5px;
+  position: absolute;
+  width: 120%;
+  bottom: -.2rem;
+  left: -10%;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-out;
+}
+.links li a{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.links li:hover a::after, .active{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.project span {
+  display: block;
+  font-weight: 300;
+}
+::-webkit-scrollbar{
+  width: 5px;
+  background: #000;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #2e8b57;
+  border-radius: 20px;
+}
