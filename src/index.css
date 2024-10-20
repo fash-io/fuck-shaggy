@@ -6,9 +6,8 @@
   content: '';
   animation: blink 0.5s infinite alternate;
   color: #c5ffde;
-  border: 2px solid #c5ffde;
+  border: 1.7px solid #c5ffde;
   margin-left: 2px;
-  border-radius: 2px;
 }
 
 @keyframes blink {

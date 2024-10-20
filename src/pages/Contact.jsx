@@ -2,7 +2,7 @@ import { socialLinks } from "../constants";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen flex items-center text-white p-14">
+    <div className="min-h-screen flex items-center text-white px-4 sm:p-14">
       <div className="bg-[#07140c] h-[500px] border-[#42c77c] border-[3px] rounded-lg flex justify-between items-center w-full pl-5">
         <div className="flex flex-col gap-7">
           {socialLinks.map((link, i) => (

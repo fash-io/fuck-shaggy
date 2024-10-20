@@ -2,7 +2,7 @@ import { projects } from "../constants";
 
 const Projects = () => {
   return (
-    <div className="w-full min-h-screen flex flex-wrap justify-center items-center gap-10 sm:gap-5 p-11 sm:pt-16">
+    <div className="w-full min-h-screen flex flex-wrap justify-center items-center gap-10 sm:gap-5 p-11 px-5 sm:pt-16">
       {projects.map((project, i) => (
         <div
           key={i}
